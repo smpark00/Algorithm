@@ -1,2 +1,13 @@
-package PACKAGE_NAME;public class Solution {
+import java.util.Scanner;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int [] numLog = new int[];
+    }
+    public static solution(int[] numLog) {
+        String answer = "";
+
+        return answer;
+    }
 }
