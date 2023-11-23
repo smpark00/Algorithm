@@ -1,7 +1,6 @@
 import java.util.Arrays;
 class Solution {
     public int solution(int a, int b, int c, int d) {
-        int answer = 0;
         int [] dice = {a,b,c,d};
         Arrays.sort(dice);
 
@@ -19,12 +18,21 @@ class Solution {
             int p = dice[0];
             int q = dice[2];
             if(p>q){
-                return (p+q)*p-q;
+                return (p+q)*(p-q);
             }else{
-                return (p+q)*q-p;
+                return (p+q)*(q-p);
             }
         }else {
-            return answer;
+            if(dice[0] == dice[1]){
+                return dice[2]*dice[3];
+            } else if (dice[1] == dice[2]) {
+                return dice[0]*dice[3];
+            } else if (dice[2] == dice[3]) {
+                return dice[0]*dice[1];
+            } else {
+                return 0;
+            }
         }
     }
 }
+
