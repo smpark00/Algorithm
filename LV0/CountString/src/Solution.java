@@ -1,12 +1,12 @@
 class Solution {
     public int solution(String myString, String pat) {
         int answer = 0;
-        for(int i=0; i<myString.length(); i++){
-            if(myString.contains(pat)){
-                answer++;
-                int a = myString.indexOf(pat);
-                myString= myString.substring(a+1);
-            }
+        int index = myString.indexOf(pat);
+
+        while (index != -1){
+            answer++;
+            myString = myString.substring(index+1);
+            index = myString.indexOf(pat);
         }
 
         return answer;
