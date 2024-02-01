@@ -13,7 +13,6 @@ public class Main {
         String B = st.nextToken();
 
         int diff = B.length()-A.length();
-        //int [] find = new int[diff];
         int min=10000000;
 
         for(int i=0; i<= diff; i++){
@@ -23,7 +22,6 @@ public class Main {
                     count++;
                 }
             }
-            //find[i] = count;
             if(count < min){
                 min = count;
             }
