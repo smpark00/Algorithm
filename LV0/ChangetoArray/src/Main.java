@@ -1,2 +1,5 @@
-package PACKAGE_NAME;public class Main {
+class Solution {
+    public String solution(int n) {
+        return String.valueOf(n);
+    }
 }
