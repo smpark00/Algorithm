@@ -3,7 +3,6 @@ import java.lang.Math;
 class Solution {
     public int[] solution(String[] keymap, String[] targets) {
         int[] answer = new int[targets.length];
-        int[] alphabet = new int [26];
         int index = 0;
         
         for(int i=0; i<targets.length; i++){
